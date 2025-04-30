@@ -1,3 +1,4 @@
+
 # 🔍 Social Media Post Classifier & Semantic Search
 
 A lightweight, open-source AI system to **classify and tag social media posts** using image, text, and video inputs — and allow **open-vocabulary search** like Instagram's keyword search.
@@ -80,3 +81,35 @@ Built with CLIP and Whisper, it supports flexible, scalable, and zero-shot class
 ├── README.md
 ├── requirements.txt
 └── main.py
+```
+
+## **📌 Requirements**
+
+-   Python 3.9+
+    
+-   PyTorch with MPS support (for macOS)
+    
+-   ffmpeg (brew install ffmpeg)
+    
+-   At least 8GB RAM recommended for Whisper + FAISS
+
+## **💡 Example Use Case**
+```bash
+POST /classify
+Input: image.jpg + caption + video.mp4
+
+→ Extract audio, transcribe
+→ Embed all content into CLIP
+→ Save vector in FAISS
+
+GET /search?query="dog birthday"
+→ Embed query with CLIP
+→ Return most similar posts
+```
+
+## **🛡 License**
+MIT — free for personal and commercial use.
+
+## **🙋‍♀️ Contributors Welcome**
+This project is in active development. Suggestions, bug fixes, and feature PRs are welcome!
+
