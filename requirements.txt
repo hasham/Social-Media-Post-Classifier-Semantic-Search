@@ -1,0 +1,31 @@
+# Core Backend
+fastapi>=0.68.0
+uvicorn>=0.15.0
+python-multipart>=0.0.5
+pydantic>=2.0.0
+python-dotenv>=0.19.0
+
+# PyTorch stack (MPS works on Apple Silicon)
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# CLIP for embeddings
+open_clip_torch>=2.0.0
+
+# Whisper for audio transcription
+openai-whisper>=20231117
+
+# Vector DB
+faiss-cpu>=1.7.4
+
+# Image/Video Processing
+Pillow>=8.3.1
+moviepy>=1.0.3
+numpy>=1.21.0
+
+# Optional (Uncomment if needed)
+# tqdm            # for progress bars
+# requests        # useful for HTTP tasks (e.g. downloading models)
+# loguru          # structured logging
+# typer           # CLI tools
